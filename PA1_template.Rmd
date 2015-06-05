@@ -9,7 +9,6 @@ output:
 ## Loading and preprocessing the data
 
 ```{r}
-getwd()
 
 activity<-read.csv('activity.csv')
 activity$interval <- 60*floor((activity$interval+1)/100) + (activity$interval %% 100)
